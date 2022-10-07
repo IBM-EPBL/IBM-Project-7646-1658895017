@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Login{% endblock %}
+{% block main %}
+<!-- <h1>{{msg}}</h1> -->
+{% include 'flash.html' %}
+<form action="{{ url_for('login')}}" method="post">
+    <fieldset>
+        <legend>Login Form:</legend>
+        <label for="name">User Name:</label><br>
+        <input type="text" name="name" id="name"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password"><br>
+        <button type="submit">submit</button>
+    </fieldset>
+</form>
+{% endblock %}
