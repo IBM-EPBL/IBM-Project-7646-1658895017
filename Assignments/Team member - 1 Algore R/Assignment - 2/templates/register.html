@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Register{% endblock %}
+{% block main %}
+{% include 'flash.html' %}
+<form action="{{ url_for('registration')}}" method="post">
+    <fieldset>
+        <legend>Registration Form:</legend>
+        <label for="name">User Name:</label><br>
+        <input type="text" name="name" id="name"><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email"><br>
+        <label for="rollno">Roll No:</label> <br>
+        <input type="text" name="rollno" id="rollno"><br>
+        <label for="password">password</label><br>
+        <input type="password" name="password" id="password"><br>
+        <button type="submit">submit</button>
+    </fieldset>
+</form>
+<div>
+    <!-- <a href="{{url_for('login')}}"><button>Login</button></a> -->
+</div>
+{% endblock %}
