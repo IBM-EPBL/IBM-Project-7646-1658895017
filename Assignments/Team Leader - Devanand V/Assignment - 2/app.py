@@ -1,5 +1,3 @@
-import ibm_db
-import sys
 import traceback
 from flask import Flask, request, render_template, session, redirect, url_for, flash
 from db2_config import get_connection
