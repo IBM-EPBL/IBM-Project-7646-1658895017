@@ -2,6 +2,8 @@ import ibm_db
 import sys
 
 conn = ''
+
+
 def get_connection():
     db_name = "bludb"
     db_host_name = "6667d8e9-9d4d-4ccb-ba32-21da3bb5aafc.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud"
@@ -20,6 +22,3 @@ def get_connection():
     except:
         print("Connection failed:", ibm_db.conn_errormsg())
         sys.exit(1)
-
-
-

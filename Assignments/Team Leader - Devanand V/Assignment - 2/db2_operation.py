@@ -20,6 +20,7 @@ def isAuthenticate(conn, username, password):
     ibm_db.execute(stmt)
     return ibm_db.fetch_assoc(stmt)
 
+
 def isUserExists(conn, username):
     sql = "SELECT * FROM users where username = ?;"
     stmt = ibm_db.prepare(conn, sql)

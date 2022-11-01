@@ -49,7 +49,8 @@ def login():
         password = request.form.get('password')
         print(username, password)
         try:
-            account = isAuthenticate(conn=conn, username=username, password=password)
+            account = isAuthenticate(
+                conn=conn, username=username, password=password)
             print("statement executed")
             # account = isAuthenticate(username=username, password=password)
             print("login satus", account)
